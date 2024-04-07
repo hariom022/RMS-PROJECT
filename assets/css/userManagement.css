@@ -1,0 +1,38 @@
+
+.good-Receipt{
+    display: flex;
+    
+}
+.good-Receipt .btn-container .accept-btn{
+    border: none;
+    background-color: #198754;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+
+    &:hover{
+        background-color: #0e452b !important;
+        transition: 0.2s ease-in !important;
+    }
+
+}
+.good-Receipt .btn-container .reject-btn{
+    border: none;
+    background-color: #dc3545;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+
+    &:hover{
+        background-color: #a10c1b;
+        transition: 0.2s ease-in;
+    }
+
+}
+
+@media only screen and (max-width:'780px'){
+    .good-Receipt{
+        display: block;
+    }
+
+}
