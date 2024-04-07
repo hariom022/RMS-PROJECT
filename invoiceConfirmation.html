@@ -458,11 +458,13 @@ v<!DOCTYPE html>
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
             <li class="breadcrumb-item">New Request</li>
+            <li class="breadcrumb-item">Quotation Approval</li>
+
             <li class="breadcrumb-item">Quotation Details</li>
             <li class="breadcrumb-item">Good Receipt</li>
             <li class="breadcrumb-item">Good Receipt Confirmation</li>
             <li class="breadcrumb-item">Invoice</li>
-            <li class="breadcrumb-item active">Confirm</li>
+            <li class="breadcrumb-item active">Invoice Confirm</li>
           </ol>
         </nav>
       </div>
@@ -495,33 +497,35 @@ v<!DOCTYPE html>
               <div class="row">
                 <div class="col">
                   <h5>Items</h5>
-                  <table class="table">
-                    <thead>
-                      <tr>
-                        <th>Product Code</th>
-                        <th>Product</th>
-                        <th>Quantity</th>
-                        <th>Price</th>
-                        <th>Total</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>ABC123</td>
-                        <td>Product A</td>
-                        <td>2</td>
-                        <td>$10.00</td>
-                        <td>$20.00</td>
-                      </tr>
-                      <tr>
-                        <td>CDE456</td>
-                        <td>Product B</td>
-                        <td>1</td>
-                        <td>$15.00</td>
-                        <td>$15.00</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <div  style="overflow-x: auto; width: 100%">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>Product Code</th>
+                          <th>Product</th>
+                          <th>Quantity</th>
+                          <th>Price</th>
+                          <th>Total</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>ABC123</td>
+                          <td>Product A</td>
+                          <td>2</td>
+                          <td>$10.00</td>
+                          <td>$20.00</td>
+                        </tr>
+                        <tr>
+                          <td>CDE456</td>
+                          <td>Product B</td>
+                          <td>1</td>
+                          <td>$15.00</td>
+                          <td>$15.00</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
               </div>
               <div class="row">
@@ -541,7 +545,7 @@ v<!DOCTYPE html>
           <a href="#">
             <button class="accept-btn">Confirm</button>
           </a>
-          <a href="requestGoodConfirmation.html">
+          <a href="invoice.html">
             <button class="reject-btn">Reject</button>
           </a>
         </div>

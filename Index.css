@@ -38,43 +38,91 @@
     font-family: "Nunito", sans-serif;
   }
 
-   .btn-container .accept-btn{
-      border: none;
-      background-color: #198754 !important;
-      color: #fff;
-      padding: 5px 10px;
-      border-radius: 5px;
+
+  /* --------------------------------------------- */
+
+  /* action button */
+
   
-      &:hover{
-          background-color: #0e452b;
-          transition: 0.2s ease-in;
-      }
-  
+ .btn-container .accept-btn{
+  border: none;
+  background-color: #198754;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+
+  &:hover{
+      background-color: #0e452b !important;
+      transition: 0.2s ease-in !important;
   }
-   .btn-container .reject-btn{
-      border: none;
-      background-color: #dc3545;
-      color: #fff;
-      padding: 5px 10px;
-      border-radius: 5px;
-  
-      &:hover{
-          background-color: #a10c1b;
-          transition: 0.2s ease-in;
-      }
-  
+
+}
+.btn-container .reject-btn{
+  border: none;
+  background-color: #dc3545;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+
+  &:hover{
+      background-color: #a10c1b;
+      transition: 0.2s ease-in;
   }
-  
-  @media only screen and (max-width:'780px'){
-      .good-Receipt{
-          display: block;
-      }
+
+}
+
+@media (max-width: 582px){
+  .btn-container .reject-btn{
+    margin-top: 10px;
+  }
+
+}
+
+
+/* ------------------------------------------------- */
+
+.action-btn-container {
+  display: flex !important;
+}
+.action-btn-container .btn{
+  margin-right: 5px;
+}
+
+
+@media (max-width: 777px){
+  .action-btn-container {
+    text-align: center;
+    display: block !important;
+  }
+  .action-btn-container .btn{
+    margin-top: 5px;
+  }
+}
+
+.inventoryUpdate .updated-btn{
+  display: flex;
+  justify-content: space-between;
+}
+.download-btn{
+  margin-top: 0px;
+
+}
+@media (max-width: 440px){
+  .inventoryUpdate .updated-btn{
+    display: block;
+    text-align: center;
+    
+  }
+  .download-btn{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
   
   }
 
+}
 
-
-  
+  /* ----------------------------------------------------------- */
   /*--------------------------------------------------------------
   # Main
   --------------------------------------------------------------*/

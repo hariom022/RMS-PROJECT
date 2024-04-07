@@ -20,6 +20,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="Index.css" />
+    
     <link rel="stylesheet" href="/assets/css/userManagement.css" />
 
     <link
@@ -483,23 +484,27 @@
             <div class="card mb-4">
               <div class="card-header">Inventory Items</div>
               <div class="card-body">
-                <table class="table">
-                  <thead>
-                    <tr>
+                <table class="table " >
+                  <thead >
+                    <tr >
                       <th scope="col">Item ID</th>
                       <th scope="col">Item Name</th>
                       <th scope="col">Quantity</th>
                       <th scope="col">Actions</th>
                     </tr>
                   </thead>
-                  <tbody>
-                    <tr>
+                  <tbody >
+                    <tr >
                       <th scope="row">1</th>
                       <td>Item A</td>
                       <td>10</td>
                       <td>
-                        <button class="btn btn-primary btn-sm">Edit</button>
-                        <button class="btn btn-danger btn-sm">Delete</button>
+                        <div class="action-btn-container">
+                          <a href="#">
+                            <button class="btn btn-primary btn-sm">Edit</button>
+                          </a>
+                          <button class="btn btn-danger btn-sm">Delete</button>
+                        </div>
                       </td>
                     </tr>
 
@@ -508,8 +513,12 @@
                       <td>Item B</td>
                       <td>432</td>
                       <td>
-                        <button class="btn btn-primary btn-sm">Edit</button>
-                        <button class="btn btn-danger btn-sm">Delete</button>
+                        <div class="action-btn-container">
+                          <a href="#">
+                            <button class="btn btn-primary btn-sm">Edit</button>
+                          </a>
+                          <button class="btn btn-danger btn-sm">Delete</button>
+                        </div>
                       </td>
                     </tr>
                     <tr>
@@ -517,8 +526,12 @@
                       <td>Item C</td>
                       <td>79</td>
                       <td>
-                        <button class="btn btn-primary btn-sm">Edit</button>
-                        <button class="btn btn-danger btn-sm">Delete</button>
+                        <div class="action-btn-container">
+                          <a href="#">
+                            <button class="btn btn-primary btn-sm">Edit</button>
+                          </a>
+                          <button class="btn btn-danger btn-sm">Delete</button>
+                        </div>
                       </td>
                     </tr>
                     <!-- Add more rows as needed -->
