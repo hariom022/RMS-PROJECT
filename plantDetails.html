@@ -20,6 +20,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="Index.css" />
+
     <link rel="stylesheet" href="/assets/css/userManagement.css" />
 
     <link
@@ -515,161 +516,99 @@
         <nav>
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-            <li class="breadcrumb-item">Inventory Update</li>
+
+            <li class="breadcrumb-item">Mater Data</li>
+            <li class="breadcrumb-item">Plant Master Overview</li>
+            <li class="breadcrumb-item active">Plant Details</li>
           </ol>
         </nav>
       </div>
       <!-- End Page Title -->
 
-      <div class="col-12 inventoryUpdate">
+      <div class="col-12">
         <div class="card good-Receipt overflow-auto">
           <div class="card-body">
-            <h5 class="card-title">Inventory Update</h5>
-            <div class="row d-flex justify-content-center">
-              <div class="col-md-12 col-sm-11 col-11 mt-3">
-                <p>This will create a stock level Adjusment .</p>
-                <p>
-                  Please ensure that the values you enter are accurate and
-                  perform these adjusments only when required.
-                </p>
-                <p>Found includes Damaged items</p>
-                <div class="updated-btn mt-5 mb-4">
-                  <button class="p-1 bg-info text-light" style="border: none">
-                    + Add new field
-                  </button>
-                  <div class="download-btn">
-                    <a href="templateDownload.html">
-                      <button
-                        class="p-1 bg-info text-light"
-                        style="border: none"
-                      >
-                        Download file
-                      </button>
-                    </a>
-                    <a href="templateUpload.html">
-                      <button
-                        class="p-1 bg-info text-light"
-                        style="border: none"
-                      >
-                        Upload file
-                      </button>
-                    </a>
-                  </div>
-                </div>
-                <div
-                  class="table-stock-info"
-                  style="overflow-x: auto; width: 100%"
-                >
-                  <table class="table table-hover">
-                    <thead>
-                      <tr>
-                        <th scope="col">SKU</th>
-                        <th scope="col">Description</th>
-                        <th scope="col">Location</th>
-                        <th scope="col">Expected</th>
-                        <th scope="col">Found</th>
-                        <th scope="col">Damage</th>
-                        <th scope="col">Missing</th>
-                        <th scope="col">UOM</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Allopurinol</td>
-                        <td>Stock</td>
-                        <td>25</td>
-                        <td>25</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>Each</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>Atorvastatin</td>
-                        <td>A2-2</td>
-                        <td>25</td>
-                        <td>25</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>Each</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">3</th>
-                        <td>Betamethasone</td>
-                        <td>A1-2</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>Each</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">4</th>
-                        <td>Carboplatin</td>
-                        <td>A1-1</td>
-                        <td>150</td>
-                        <td>150</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>Each</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">5</th>
-                        <td>Cefixime</td>
-                        <td>Reciving Bay</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>Each</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">6</th>
-                        <td>Cetrizine</td>
-                        <td>A2-1</td>
-                        <td>200</td>
-                        <td>200</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>Each</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">7</th>
-                        <td>Chlorambucil</td>
-                        <td>Back Stock</td>
-                        <td>108</td>
-                        <td>108</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>Each</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <div class="mb-3">
-                  <label for="exampleFormControlTextarea1" class="form-label"
-                    >Note</label
-                  >
-                  <textarea
-                    class="form-control"
-                    id="exampleFormControlTextarea1"
-                    rows="3"
-                    placeholder="Write..."
-                  ></textarea>
-                </div>
-                <hr />
-                <div class="add-btn">
-                  <a href="" class="btn bg-primary text-light">Ok</a>
-                  <a href="" class="btn bg-primary text-light">Cancel</a>
-                </div>
+            <h5 class="card-title">Plant Details</h5>
+
+            <div class="card mb-4">
+              <div class="card-header">Plant Information</div>
+              <div class="card-body">
+                <h5 class="card-title">Plant Name</h5>
+                <p class="card-text">Address: 123 Main St, City, Country</p>
+                <p class="card-text">Contact: John Doe (johndoe@example.com)</p>
+              </div>
+            </div>
+
+            <!-- Inventory Items -->
+            <div class="card mb-4">
+              <div class="card-header">Inventory Items</div>
+              <div class="card-body">
+                <table class="table table-hover">
+                  <thead>
+                    <tr>
+                      <th scope="col">Item ID</th>
+                      <th scope="col">Item Name</th>
+                      <th scope="col">Quantity</th>
+                      <th scope="col">Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Item A</td>
+                      <td>10</td>
+                      <td>
+                        <div class="action-btn-container">
+                          <a href="#">
+                            <button class="btn btn-primary btn-sm">Edit</button>
+                          </a>
+                          <button class="btn btn-danger btn-sm">Delete</button>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Item B</td>
+                      <td>432</td>
+                      <td>
+                        <div class="action-btn-container">
+                          <a href="#">
+                            <button class="btn btn-primary btn-sm">Edit</button>
+                          </a>
+                          <button class="btn btn-danger btn-sm">Delete</button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Item C</td>
+                      <td>79</td>
+                      <td>
+                        <div class="action-btn-container">
+                          <a href="#">
+                            <button class="btn btn-primary btn-sm">Edit</button>
+                          </a>
+                          <button class="btn btn-danger btn-sm">Delete</button>
+                        </div>
+                      </td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>
         </div>
+        <!-- <div class="text-center">
+          <button class="btn btn-success">
+            <a href="productMasterOverview.html" class="text-light">
+              Goto Product Master
+            </a>
+          </button>
+        </div> -->
       </div>
-
-      <!-- End Inventory Update -->
+      <!--End Site Details -->
     </main>
     <!-- End #main -->
 
@@ -687,10 +626,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
-    <script src="assets/vendor/chart.js/chart.umd.js"></script>
-    <script src="assets/vendor/echarts/echarts.min.js"></script>
-    <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>

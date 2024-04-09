@@ -357,17 +357,7 @@
           >
             <li>
               <a href="userManagement.html">
-                <i class="bi bi-circle"></i><span>Table 1</span>
-              </a>
-            </li>
-            <li>
-              <a href="userManagement.html">
-                <i class="bi bi-circle"></i><span>Table 2</span>
-              </a>
-            </li>
-            <li>
-              <a href="userManagement.html">
-                <i class="bi bi-circle"></i><span>Table 3</span>
+                <i class="bi bi-circle"></i><span>Admin User Management</span>
               </a>
             </li>
           </ul>
@@ -390,17 +380,13 @@
           >
             <li>
               <a href="masterData.html">
-                <i class="bi bi-circle"></i><span>Master Data 1</span>
+                <i class="bi bi-circle"></i><span>Plant Master Overview</span>
               </a>
             </li>
             <li>
-              <a href="masterData.html">
-                <i class="bi bi-circle"></i><span>Master Data 2</span>
-              </a>
-            </li>
-            <li>
-              <a href="masterData.html">
-                <i class="bi bi-circle"></i><span>Master Data 3</span>
+              <a href="materialMasterOverview.html">
+                <i class="bi bi-circle"></i
+                ><span>Material Master Overview</span>
               </a>
             </li>
           </ul>
@@ -408,13 +394,32 @@
 
         <li class="nav-item">
           <a
-            href="inventoryUpdate.html"
+            href="#"
             class="nav-link collapsed"
-            data-bs-target="#tables-nav"
+            data-bs-target="#Inv-nav"
+            data-bs-toggle="collapse"
           >
             <i class="bi bi-layout-text-window-reverse"></i>
             <span>Inventory Update</span>
+            <i class="bi bi-chevron-down ms-auto"></i>
           </a>
+          <ul
+            id="Inv-nav"
+            class="nav-content collapse"
+            data-bs-parent="#sidebar-nav"
+          >
+            <li>
+              <a href="inventoryUpdate.html">
+                <i class="bi bi-circle"></i
+                ><span>Iventory Update Overview</span>
+              </a>
+            </li>
+            <li>
+              <a href="consumptionEntry.html">
+                <i class="bi bi-circle"></i><span>Consumption Entry Form</span>
+              </a>
+            </li>
+          </ul>
         </li>
 
         <li class="nav-item">
@@ -430,11 +435,64 @@
         <li class="nav-item">
           <a
             class="nav-link collapsed"
-            data-bs-target="#icons-nav"
+            data-bs-target="#report-nav"
             href="openRequestReport.html"
+            data-bs-toggle="collapse"
           >
             <i class="bi bi-gear-wide"></i><span>Reports</span>
+            <i class="bi bi-chevron-down ms-auto"></i>
           </a>
+          <ul
+            id="report-nav"
+            class="nav-content collapse"
+            data-bs-parent="#sidebar-nav"
+          >
+            <li>
+              <a href="openRequestReport.html">
+                <i class="bi bi-circle"></i><span>Open Request Report</span>
+              </a>
+            </li>
+            <li>
+              <a href="openGoodsReceipts.html">
+                <i class="bi bi-circle"></i
+                ><span>Open Goods Receipts Report</span>
+              </a>
+            </li>
+            <li>
+              <a href="openInvoiceConfirmation.html">
+                <i class="bi bi-circle"></i
+                ><span>Open Invoice Confirmation Report</span>
+              </a>
+            </li>
+            <li>
+              <a href="consumptionReport.html">
+                <i class="bi bi-circle"></i><span>Last Consumption Report</span>
+              </a>
+            </li>
+            <li>
+              <a href="inventoryStatus.html">
+                <i class="bi bi-circle"></i><span>Inventory Status Report</span>
+              </a>
+            </li>
+            <li>
+              <a href="salesOrderDetailsReport.html">
+                <i class="bi bi-circle"></i
+                ><span>Sales Order Details Report</span>
+              </a>
+            </li>
+            <li>
+              <a href="completedRequestsReport.html">
+                <i class="bi bi-circle"></i
+                ><span>Completed Requests Report</span>
+              </a>
+            </li>
+            <li>
+              <a href="goodsReceiptDetailsReport.html">
+                <i class="bi bi-circle"></i
+                ><span>Goods Receipt Details Report</span>
+              </a>
+            </li>
+          </ul>
         </li>
 
         <li class="nav-item">
@@ -467,81 +525,92 @@
         <div class="card good-Receipt overflow-auto">
           <div class="card-body">
             <h5 class="card-title">New Request</h5>
-            <div class="d-flex mt-3 mb-3" style="width: 100%; overflow-x: auto">
-              <input
-                type="text"
-                style="width: 40%"
-                id="searchInput"
-                class="form-control mt-3"
-                placeholder="Add product code,uom,delivery,qtn"
-              />
-            </div>
-            <div style="width: 100%; overflow-x: auto">
-              <table class="table">
-                <thead>
-                  <tr class="text-center">
-                    <th scope="col ">Product code</th>
-                    <th scope="col ">Product Type</th>
-                    <th scope="col ">Quantity</th>
-                    <th scope="col ">UOM</th>
-                    <th scope="col ">Expected Delivery</th>
-                  </tr>
-                </thead>
 
-                <tbody>
-                  <tr class="text-center">
-                    <th scope="row" class="fw-normal">Code 1</th>
-                    <td>Type 1</td>
-                    <td>5</td>
-                    <td>EA</td>
-                    <td>05/06/2023</td>
-                  </tr>
-                  <tr class="text-center">
-                    <th scope="row" class="fw-normal">Code 2</th>
-                    <td>Type 2</td>
-                    <td>6</td>
-                    <td>EA</td>
-                    <td>05/06/2024</td>
-                  </tr>
-                  <tr class="text-center">
-                    <th scope="row" class="fw-normal">Code 3</th>
-                    <td>Type 3</td>
-                    <td>3</td>
-                    <td>EA</td>
-                    <td>02/06/2023</td>
-                  </tr>
-                  <tr class="text-center">
-                    <th scope="row" class="fw-normal">Code 4</th>
-                    <td>Type 4</td>
-                    <td>1</td>
-                    <td>EA</td>
-                    <td>08/06/2023</td>
-                  </tr>
-                  <tr class="text-center">
-                    <th scope="row" class="fw-normal">Code 5</th>
-                    <td>Type 5</td>
-                    <td>5</td>
-                    <td>EA</td>
-                    <td>08/06/2023</td>
-                  </tr>
-                  <tr class="text-center">
-                    <th scope="row" class="fw-normal">Code 6</th>
-                    <td>Type 6</td>
-                    <td>9</td>
-                    <td>EA</td>
-                    <td>05/03/2023</td>
-                  </tr>
-                </tbody>
-              </table>
+            <div class="d-flex justify-content-end">
+              <button
+                class="bg-primary p-3"
+                style="border: none; border-radius: 5px"
+              >
+                <a href="addNewMaterial.html" class="text-light"
+                  >Add New Material</a
+                >
+              </button>
             </div>
+            <form>
+              <div class="row mb-3 mt-4">
+                <label for="product-code" class="col-sm-2 col-form-label"
+                  >Material Code</label
+                >
+                <div class="col-sm-10">
+                  <select class="form-select" id="product-code">
+                    <option selected>Select Material code</option>
+                    <option value="123">Material Code 123</option>
+                    <option value="456">Material Code 456</option>
+                    <option value="789">Material Code 789</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="product-type" class="col-sm-2 col-form-label"
+                  >Material Type</label
+                >
+                <div class="col-sm-10">
+                  <select class="form-select" id="product-type">
+                    <option selected>Select Material type</option>
+                    <option value="type1">Material Type 1</option>
+                    <option value="type2">Material Type 2</option>
+                    <option value="type3">Material Type 3</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="quantity" class="col-sm-2 col-form-label"
+                  >Quantity</label
+                >
+                <div class="col-sm-10">
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="quantity"
+                    placeholder="Enter quantity"
+                  />
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="uom" class="col-sm-2 col-form-label">UOM</label>
+                <div class="col-sm-10">
+                  <select class="form-select" id="uom">
+                    <option selected>Select UOM</option>
+                    <option value="pieces">Pieces</option>
+                    <option value="units">Units</option>
+                    <option value="kilograms">Kilograms</option>
+                    <option value="liters">Liters</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="expected-delivery" class="col-sm-2 col-form-label"
+                  >Expected Delivery</label
+                >
+                <div class="col-sm-10">
+                  <input
+                    type="date"
+                    class="form-control"
+                    id="expected-delivery"
+                  />
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-sm-10 offset-sm-2">
+                  <button type="submit" class="btn btn-primary">
+                    <a href="quotationApproveSec.html" class="text-light"
+                      >Submit</a
+                    >
+                  </button>
+                </div>
+              </div>
+            </form>
           </div>
-        </div>
-        <div class="btn-container text-center">
-          <a href="quotationApproveSec.html">
-            <button class="accept-btn">Accept</button>
-          </a>
-
-          <button class="reject-btn">Reject</button>
         </div>
       </div>
 
