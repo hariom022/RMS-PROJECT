@@ -357,17 +357,7 @@
           >
             <li>
               <a href="userManagement.html">
-                <i class="bi bi-circle"></i><span>Table 1</span>
-              </a>
-            </li>
-            <li>
-              <a href="userManagement.html">
-                <i class="bi bi-circle"></i><span>Table 2</span>
-              </a>
-            </li>
-            <li>
-              <a href="userManagement.html">
-                <i class="bi bi-circle"></i><span>Table 3</span>
+                <i class="bi bi-circle"></i><span>Admin User Management</span>
               </a>
             </li>
           </ul>
@@ -390,17 +380,13 @@
           >
             <li>
               <a href="masterData.html">
-                <i class="bi bi-circle"></i><span>Master Data 1</span>
+                <i class="bi bi-circle"></i><span>Plant Master Overview</span>
               </a>
             </li>
             <li>
-              <a href="masterData.html">
-                <i class="bi bi-circle"></i><span>Master Data 2</span>
-              </a>
-            </li>
-            <li>
-              <a href="masterData.html">
-                <i class="bi bi-circle"></i><span>Master Data 3</span>
+              <a href="materialMasterOverview.html">
+                <i class="bi bi-circle"></i
+                ><span>Material Master Overview</span>
               </a>
             </li>
           </ul>
@@ -408,13 +394,32 @@
 
         <li class="nav-item">
           <a
-            href="inventoryUpdate.html"
+            href="#"
             class="nav-link collapsed"
-            data-bs-target="#tables-nav"
+            data-bs-target="#Inv-nav"
+            data-bs-toggle="collapse"
           >
             <i class="bi bi-layout-text-window-reverse"></i>
             <span>Inventory Update</span>
+            <i class="bi bi-chevron-down ms-auto"></i>
           </a>
+          <ul
+            id="Inv-nav"
+            class="nav-content collapse"
+            data-bs-parent="#sidebar-nav"
+          >
+            <li>
+              <a href="inventoryUpdate.html">
+                <i class="bi bi-circle"></i
+                ><span>Iventory Update Overview</span>
+              </a>
+            </li>
+            <li>
+              <a href="consumptionEntry.html">
+                <i class="bi bi-circle"></i><span>Consumption Entry Form</span>
+              </a>
+            </li>
+          </ul>
         </li>
 
         <li class="nav-item">
@@ -430,11 +435,64 @@
         <li class="nav-item">
           <a
             class="nav-link collapsed"
-            data-bs-target="#icons-nav"
+            data-bs-target="#report-nav"
             href="openRequestReport.html"
+            data-bs-toggle="collapse"
           >
             <i class="bi bi-gear-wide"></i><span>Reports</span>
+            <i class="bi bi-chevron-down ms-auto"></i>
           </a>
+          <ul
+            id="report-nav"
+            class="nav-content collapse"
+            data-bs-parent="#sidebar-nav"
+          >
+            <li>
+              <a href="openRequestReport.html">
+                <i class="bi bi-circle"></i><span>Open Request Report</span>
+              </a>
+            </li>
+            <li>
+              <a href="openGoodsReceipts.html">
+                <i class="bi bi-circle"></i
+                ><span>Open Goods Receipts Report</span>
+              </a>
+            </li>
+            <li>
+              <a href="openInvoiceConfirmation.html">
+                <i class="bi bi-circle"></i
+                ><span>Open Invoice Confirmation Report</span>
+              </a>
+            </li>
+            <li>
+              <a href="consumptionReport.html">
+                <i class="bi bi-circle"></i><span>Last Consumption Report</span>
+              </a>
+            </li>
+            <li>
+              <a href="inventoryStatus.html">
+                <i class="bi bi-circle"></i><span>Inventory Status Report</span>
+              </a>
+            </li>
+            <li>
+              <a href="salesOrderDetailsReport.html">
+                <i class="bi bi-circle"></i
+                ><span>Sales Order Details Report</span>
+              </a>
+            </li>
+            <li>
+              <a href="completedRequestsReport.html">
+                <i class="bi bi-circle"></i
+                ><span>Completed Requests Report</span>
+              </a>
+            </li>
+            <li>
+              <a href="goodsReceiptDetailsReport.html">
+                <i class="bi bi-circle"></i
+                ><span>Goods Receipt Details Report</span>
+              </a>
+            </li>
+          </ul>
         </li>
 
         <li class="nav-item">
@@ -480,13 +538,13 @@
               </div>
             </div>
             <div style="width: 100%; overflow-x: auto">
-              <table class="table" style="overflow-x: auto">
+              <table class="table table-hover" style="overflow-x: auto">
                 <thead>
                   <tr>
                     <th scope="col">Receipt ID</th>
                     <th scope="col">Supplier</th>
                     <th scope="col">Date Received</th>
-                    <th scope="col">Product Name</th>
+                    <th scope="col">Material Name</th>
                     <th scope="col">Quantity</th>
                     <th scope="col">Unit Price</th>
                     <th scope="col">Total Price</th>
@@ -497,7 +555,7 @@
                     <td>1</td>
                     <td>Supplier A</td>
                     <td>2024-04-01</td>
-                    <td>Product X</td>
+                    <td>Material X</td>
                     <td>20</td>
                     <td>$15</td>
                     <td>$300</td>
@@ -506,7 +564,7 @@
                     <td>2</td>
                     <td>Supplier B</td>
                     <td>2024-04-05</td>
-                    <td>Product Y</td>
+                    <td>Material Y</td>
                     <td>15</td>
                     <td>$20</td>
                     <td>$300</td>
@@ -515,7 +573,7 @@
                     <td>3</td>
                     <td>Supplier C</td>
                     <td>2024-03-06</td>
-                    <td>Product Z</td>
+                    <td>Material Z</td>
                     <td>10</td>
                     <td>$20</td>
                     <td>$200</td>
@@ -524,7 +582,7 @@
                     <td>4</td>
                     <td>Supplier D</td>
                     <td>2024-04-02</td>
-                    <td>Product E</td>
+                    <td>Material E</td>
                     <td>05</td>
                     <td>$20</td>
                     <td>$100</td>
@@ -533,7 +591,7 @@
                     <td>5</td>
                     <td>Supplier E</td>
                     <td>2024-04-02</td>
-                    <td>Product G</td>
+                    <td>Material G</td>
                     <td>20</td>
                     <td>$20</td>
                     <td>$400</td>
@@ -542,7 +600,7 @@
                     <td>6</td>
                     <td>Supplier F</td>
                     <td>2024-04-10</td>
-                    <td>Product R</td>
+                    <td>Material R</td>
                     <td>30</td>
                     <td>$20</td>
                     <td>$600</td>
@@ -551,20 +609,6 @@
                 </tbody>
               </table>
             </div>
-          </div>
-        </div>
-        <div class="row text-center d-flex justify-content-center">
-          <div class="col-md-3 col-sm-4 mb-3">
-            <button class="btn btn-primary w-100">
-              <a href="openInvoiceConfirmation.html" class="text-light">
-                Invoice Confirmation
-              </a>
-            </button>
-          </div>
-          <div class="col-md-3 col-sm-4 mb-3">
-            <button class="btn btn-primary w-100">
-              <a href="openRequestReport.html" class="text-light"> Back </a>
-            </button>
           </div>
         </div>
       </div>

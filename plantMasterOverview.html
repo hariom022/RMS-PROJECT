@@ -31,6 +31,55 @@
     <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet" />
     <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
     <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet" />
+
+    <style>
+      /* Add your custom styles here */
+      .page-title {
+        margin-bottom: 30px;
+      }
+
+      .card-body {
+        padding: 20px;
+      }
+
+      .site-card {
+        border: 1px solid #dee2e6;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+      }
+
+      .site-card:hover {
+        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+        transform: translateY(-5px);
+      }
+
+      .site-card .card-body {
+        padding: 20px;
+      }
+
+      .card-title {
+        font-size: 1.25rem;
+        font-weight: bold;
+      }
+
+      .card-text {
+        color: #6c757d;
+      }
+
+      .btn-view-details {
+        background-color: #4caf50;
+        border-color: #4caf50;
+      }
+
+      .btn-view-details:hover {
+        background-color: #45a049;
+        border-color: #45a049;
+      }
+
+      .badge-inventory-count {
+        background-color: #007bff;
+      }
+    </style>
   </head>
 
   <body>
@@ -357,17 +406,7 @@
           >
             <li>
               <a href="userManagement.html">
-                <i class="bi bi-circle"></i><span>Table 1</span>
-              </a>
-            </li>
-            <li>
-              <a href="userManagement.html">
-                <i class="bi bi-circle"></i><span>Table 2</span>
-              </a>
-            </li>
-            <li>
-              <a href="userManagement.html">
-                <i class="bi bi-circle"></i><span>Table 3</span>
+                <i class="bi bi-circle"></i><span>Admin User Management</span>
               </a>
             </li>
           </ul>
@@ -390,17 +429,13 @@
           >
             <li>
               <a href="masterData.html">
-                <i class="bi bi-circle"></i><span>Master Data 1</span>
+                <i class="bi bi-circle"></i><span>Plant Master Overview</span>
               </a>
             </li>
             <li>
-              <a href="masterData.html">
-                <i class="bi bi-circle"></i><span>Master Data 2</span>
-              </a>
-            </li>
-            <li>
-              <a href="masterData.html">
-                <i class="bi bi-circle"></i><span>Master Data 3</span>
+              <a href="materialMasterOverview.html">
+                <i class="bi bi-circle"></i
+                ><span>Material Master Overview</span>
               </a>
             </li>
           </ul>
@@ -408,13 +443,32 @@
 
         <li class="nav-item">
           <a
-            href="inventoryUpdate.html"
+            href="#"
             class="nav-link collapsed"
-            data-bs-target="#tables-nav"
+            data-bs-target="#Inv-nav"
+            data-bs-toggle="collapse"
           >
             <i class="bi bi-layout-text-window-reverse"></i>
             <span>Inventory Update</span>
+            <i class="bi bi-chevron-down ms-auto"></i>
           </a>
+          <ul
+            id="Inv-nav"
+            class="nav-content collapse"
+            data-bs-parent="#sidebar-nav"
+          >
+            <li>
+              <a href="inventoryUpdate.html">
+                <i class="bi bi-circle"></i
+                ><span>Iventory Update Overview</span>
+              </a>
+            </li>
+            <li>
+              <a href="consumptionEntry.html">
+                <i class="bi bi-circle"></i><span>Consumption Entry Form</span>
+              </a>
+            </li>
+          </ul>
         </li>
 
         <li class="nav-item">
@@ -430,11 +484,64 @@
         <li class="nav-item">
           <a
             class="nav-link collapsed"
-            data-bs-target="#icons-nav"
+            data-bs-target="#report-nav"
             href="openRequestReport.html"
+            data-bs-toggle="collapse"
           >
             <i class="bi bi-gear-wide"></i><span>Reports</span>
+            <i class="bi bi-chevron-down ms-auto"></i>
           </a>
+          <ul
+            id="report-nav"
+            class="nav-content collapse"
+            data-bs-parent="#sidebar-nav"
+          >
+            <li>
+              <a href="openRequestReport.html">
+                <i class="bi bi-circle"></i><span>Open Request Report</span>
+              </a>
+            </li>
+            <li>
+              <a href="openGoodsReceipts.html">
+                <i class="bi bi-circle"></i
+                ><span>Open Goods Receipts Report</span>
+              </a>
+            </li>
+            <li>
+              <a href="openInvoiceConfirmation.html">
+                <i class="bi bi-circle"></i
+                ><span>Open Invoice Confirmation Report</span>
+              </a>
+            </li>
+            <li>
+              <a href="consumptionReport.html">
+                <i class="bi bi-circle"></i><span>Last Consumption Report</span>
+              </a>
+            </li>
+            <li>
+              <a href="inventoryStatus.html">
+                <i class="bi bi-circle"></i><span>Inventory Status Report</span>
+              </a>
+            </li>
+            <li>
+              <a href="salesOrderDetailsReport.html">
+                <i class="bi bi-circle"></i
+                ><span>Sales Order Details Report</span>
+              </a>
+            </li>
+            <li>
+              <a href="completedRequestsReport.html">
+                <i class="bi bi-circle"></i
+                ><span>Completed Requests Report</span>
+              </a>
+            </li>
+            <li>
+              <a href="goodsReceiptDetailsReport.html">
+                <i class="bi bi-circle"></i
+                ><span>Goods Receipt Details Report</span>
+              </a>
+            </li>
+          </ul>
         </li>
 
         <li class="nav-item">
@@ -457,10 +564,8 @@
         <nav>
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-            <li class="breadcrumb-item">Mater Data</li>
-            <li class="breadcrumb-item">Site Details</li>
-            <li class="breadcrumb-item">Product Master Overview</li>
-            <li class="breadcrumb-item active">Product Details</li>
+            <li class="breadcrumb-item">Master Data</li>
+            <li class="breadcrumb-item active">Plant Master Overview</li>
           </ol>
         </nav>
       </div>
@@ -469,133 +574,136 @@
       <div class="col-12">
         <div class="card good-Receipt overflow-auto">
           <div class="card-body">
-            <h5 class="card-title">Site Details</h5>
+            <h5 class="card-title">Plant Master Overview</h5>
 
-            <div class="row master-data">
-              <div
-                class="col"
-                style="overflow-x: auto; width: 100%; cursor: pointer"
-              >
-                <table class="table table-hover table-bordered">
-                  <thead>
-                    <tr>
-                      <th scope="col">Product No.</th>
-                      <th scope="col">Product Desc.</th>
-                      <th scope="col">Material Group</th>
-                      <th scope="col">UOM</th>
-                      <th scope="col">Product Status</th>
-                      <th scope="col">Site No.</th>
-                      <th scope="col">Min Stock</th>
-                      <th scope="col">Max Stock</th>
-                      <th scope="col">Recorder Pt</th>
-                      <th scope="col">Safety Stock</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">ABC123</th>
-                      <td>Allopurinol</td>
-                      <td>Group 1</td>
-                      <td>ea</td>
-                      <td>Active</td>
-                      <td>site 1</td>
-                      <td>10</td>
-                      <td>150</td>
-                      <td>25</td>
-                      <td>10</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">DEF456</th>
-                      <td>Amoxicillin+Clavulinic acid</td>
-                      <td>Group 2</td>
-                      <td>ea</td>
-                      <td>Active</td>
-                      <td>site 1</td>
-                      <td>10</td>
-                      <td>50</td>
-                      <td>20</td>
-                      <td>5</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">AZY457</th>
-                      <td>Atorvastatin</td>
-                      <td>Group 3</td>
-                      <td>ea</td>
-                      <td>Active</td>
-                      <td>site 1</td>
-                      <td>10</td>
-                      <td>100</td>
-                      <td>35</td>
-                      <td>5</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">SAF157</th>
-                      <td>Betamethasone</td>
-                      <td>Group 4</td>
-                      <td>ea</td>
-                      <td>Active</td>
-                      <td>site 1</td>
-                      <td>10</td>
-                      <td>150</td>
-                      <td>50</td>
-                      <td>10</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">KLH456</th>
-                      <td>Carboplatin</td>
-                      <td>Group 5</td>
-                      <td>ea</td>
-                      <td>Active</td>
-                      <td>site 1</td>
-                      <td>10</td>
-                      <td>150</td>
-                      <td>25</td>
-                      <td>5</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">KLH456</th>
-                      <td>Cefixime</td>
-                      <td>Group 5</td>
-                      <td>ea</td>
-                      <td>Active</td>
-                      <td>site 1</td>
-                      <td>10</td>
-                      <td>150</td>
-                      <td>25</td>
-                      <td>5</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">KLH456</th>
-                      <td>Cetrizine</td>
-                      <td>Group 5</td>
-                      <td>ea</td>
-                      <td>Active</td>
-                      <td>site 1</td>
-                      <td>10</td>
-                      <td>150</td>
-                      <td>25</td>
-                      <td>5</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">KLH456</th>
-                      <td>Chlorambucil</td>
-                      <td>Group 5</td>
-                      <td>ea</td>
-                      <td>Active</td>
-                      <td>site 1</td>
-                      <td>10</td>
-                      <td>150</td>
-                      <td>25</td>
-                      <td>5</td>
-                    </tr>
-                  </tbody>
-                </table>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+              <div class="col">
+                <div class="card site-card">
+                  <div class="card-body">
+                    <h5 class="card-title">Hospital A</h5>
+                    <p class="card-text">Location: City, Country</p>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <button class="btn btn-primary btn-view-details">
+                        <a href="plantDetails.html" class="text-light"
+                          >View Details</a
+                        >
+                      </button>
+                      <span class="badge badge-pill badge-inventory-count"
+                        >Inventory Count: 100</span
+                      >
+                    </div>
+                  </div>
+                </div>
               </div>
+              <div class="col">
+                <div class="card site-card">
+                  <div class="card-body">
+                    <h5 class="card-title">Hospital B</h5>
+                    <p class="card-text">Location: City, Country</p>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <button class="btn btn-primary btn-view-details">
+                        <a href="plantDetails.html" class="text-light"
+                          >View Details</a
+                        >
+                      </button>
+                      <span class="badge badge-pill badge-inventory-count"
+                        >Inventory Count: 150</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card site-card">
+                  <div class="card-body">
+                    <h5 class="card-title">Clinic C</h5>
+                    <p class="card-text">Location: City, Country</p>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <button class="btn btn-primary btn-view-details">
+                        <a href="plantDetails.html" class="text-light"
+                          >View Details</a
+                        >
+                      </button>
+                      <span class="badge badge-pill badge-inventory-count"
+                        >Inventory Count: 80</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card site-card">
+                  <div class="card-body">
+                    <h5 class="card-title">Clint D</h5>
+                    <p class="card-text">Location: City, Country</p>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <button class="btn btn-primary btn-view-details">
+                        <a href="plantDetails.html" class="text-light"
+                          >View Details</a
+                        >
+                      </button>
+                      <span class="badge badge-pill badge-inventory-count"
+                        >Inventory Count: 69</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card site-card">
+                  <div class="card-body">
+                    <h5 class="card-title">Clint E</h5>
+                    <p class="card-text">Location: City, Country</p>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <button class="btn btn-primary btn-view-details">
+                        <a href="plantDetails.html" class="text-light"
+                          >View Details</a
+                        >
+                      </button>
+                      <span class="badge badge-pill badge-inventory-count"
+                        >Inventory Count: 30</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card site-card">
+                  <div class="card-body">
+                    <h5 class="card-title">Clint F</h5>
+                    <p class="card-text">Location: City, Country</p>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <button class="btn btn-primary btn-view-details">
+                        <a href="plantDetails.html" class="text-light"
+                          >View Details</a
+                        >
+                      </button>
+                      <span class="badge badge-pill badge-inventory-count"
+                        >Inventory Count: 550</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Add more site cards here -->
             </div>
           </div>
         </div>
       </div>
-      <!--product Details end -->
+      <!-- End Master Data -->
     </main>
     <!-- End #main -->
 

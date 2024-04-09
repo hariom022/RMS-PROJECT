@@ -357,22 +357,11 @@ v<!DOCTYPE html>
           >
             <li>
               <a href="userManagement.html">
-                <i class="bi bi-circle"></i><span>Table 1</span>
-              </a>
-            </li>
-            <li>
-              <a href="userManagement.html">
-                <i class="bi bi-circle"></i><span>Table 2</span>
-              </a>
-            </li>
-            <li>
-              <a href="userManagement.html">
-                <i class="bi bi-circle"></i><span>Table 3</span>
+                <i class="bi bi-circle"></i><span>Admin User Management</span>
               </a>
             </li>
           </ul>
         </li>
-      
 
         <li class="nav-item">
           <a
@@ -391,34 +380,47 @@ v<!DOCTYPE html>
           >
             <li>
               <a href="masterData.html">
-                <i class="bi bi-circle"></i><span>Master Data 1</span>
+                <i class="bi bi-circle"></i><span>Plant Master Overview</span>
               </a>
             </li>
             <li>
-              <a href="masterData.html">
-                <i class="bi bi-circle"></i><span>Master Data 2</span>
-              </a>
-            </li>
-            <li>
-              <a href="masterData.html">
-                <i class="bi bi-circle"></i><span>Master Data 3</span>
+              <a href="materialMasterOverview.html">
+                <i class="bi bi-circle"></i
+                ><span>Material Master Overview</span>
               </a>
             </li>
           </ul>
         </li>
-      
 
         <li class="nav-item">
           <a
-            href="inventoryUpdate.html"
+            href="#"
             class="nav-link collapsed"
-            data-bs-target="#tables-nav"
+            data-bs-target="#Inv-nav"
+            data-bs-toggle="collapse"
           >
             <i class="bi bi-layout-text-window-reverse"></i>
             <span>Inventory Update</span>
+            <i class="bi bi-chevron-down ms-auto"></i>
           </a>
+          <ul
+            id="Inv-nav"
+            class="nav-content collapse"
+            data-bs-parent="#sidebar-nav"
+          >
+            <li>
+              <a href="inventoryUpdate.html">
+                <i class="bi bi-circle"></i
+                ><span>Iventory Update Overview</span>
+              </a>
+            </li>
+            <li>
+              <a href="consumptionEntry.html">
+                <i class="bi bi-circle"></i><span>Consumption Entry Form</span>
+              </a>
+            </li>
+          </ul>
         </li>
-      
 
         <li class="nav-item">
           <a
@@ -433,21 +435,76 @@ v<!DOCTYPE html>
         <li class="nav-item">
           <a
             class="nav-link collapsed"
-            data-bs-target="#icons-nav"
+            data-bs-target="#report-nav"
             href="openRequestReport.html"
+            data-bs-toggle="collapse"
           >
             <i class="bi bi-gear-wide"></i><span>Reports</span>
+            <i class="bi bi-chevron-down ms-auto"></i>
           </a>
+          <ul
+            id="report-nav"
+            class="nav-content collapse"
+            data-bs-parent="#sidebar-nav"
+          >
+            <li>
+              <a href="openRequestReport.html">
+                <i class="bi bi-circle"></i><span>Open Request Report</span>
+              </a>
+            </li>
+            <li>
+              <a href="openGoodsReceipts.html">
+                <i class="bi bi-circle"></i
+                ><span>Open Goods Receipts Report</span>
+              </a>
+            </li>
+            <li>
+              <a href="openInvoiceConfirmation.html">
+                <i class="bi bi-circle"></i
+                ><span>Open Invoice Confirmation Report</span>
+              </a>
+            </li>
+            <li>
+              <a href="consumptionReport.html">
+                <i class="bi bi-circle"></i><span>Last Consumption Report</span>
+              </a>
+            </li>
+            <li>
+              <a href="inventoryStatus.html">
+                <i class="bi bi-circle"></i><span>Inventory Status Report</span>
+              </a>
+            </li>
+            <li>
+              <a href="salesOrderDetailsReport.html">
+                <i class="bi bi-circle"></i
+                ><span>Sales Order Details Report</span>
+              </a>
+            </li>
+            <li>
+              <a href="completedRequestsReport.html">
+                <i class="bi bi-circle"></i
+                ><span>Completed Requests Report</span>
+              </a>
+            </li>
+            <li>
+              <a href="goodsReceiptDetailsReport.html">
+                <i class="bi bi-circle"></i
+                ><span>Goods Receipt Details Report</span>
+              </a>
+            </li>
+          </ul>
         </li>
 
-
         <li class="nav-item">
-          <a class="nav-link collapsed" data-bs-target="#icons-nav" href="role&Auth.html">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#icons-nav"
+            href="role&Auth.html"
+          >
             <i class="bi bi-person-circle"></i
             ><span>Role & Authentication</span>
           </a>
         </li>
-
       </ul>
     </aside>
     <!-- End Sidebar-->
@@ -459,13 +516,12 @@ v<!DOCTYPE html>
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
             <li class="breadcrumb-item">New Request</li>
-            <li class="breadcrumb-item ">Quotation Approval</li>
+            <li class="breadcrumb-item">Quotation Approval</li>
 
             <li class="breadcrumb-item">Quotation Details</li>
-            <li class="breadcrumb-item ">Good Receipt</li>
-            <li class="breadcrumb-item ">Good Receipt Confirmation</li>
+            <li class="breadcrumb-item">Good Receipt</li>
+            <li class="breadcrumb-item">Good Receipt Confirmation</li>
             <li class="breadcrumb-item active">Invoice</li>
-            
           </ol>
         </nav>
       </div>
@@ -475,12 +531,15 @@ v<!DOCTYPE html>
         <div class="card good-Receipt overflow-auto">
           <div class="card-body">
             <h5 class="card-title">Invoice</h5>
-<div style="width: 100%; overflow-x: auto;">
-            <table class="table table-hover table-bordered" style="margin-bottom: 0px !important;  " >
+            <div style="width: 100%; overflow-x: auto">
+              <table
+                class="table table-hover table-bordered"
+                style="margin-bottom: 0px !important"
+              >
                 <thead>
                   <tr>
                     <th scope="col">Item</th>
-                    <th scope="col">Product Code</th>
+                    <th scope="col">Material Code</th>
                     <th scope="col">Quantity</th>
                     <th scope="col">Description</th>
                     <th scope="col">Rate</th>
@@ -506,7 +565,7 @@ v<!DOCTYPE html>
                   </tr>
                   <tr>
                     <th scope="row">GHI678</th>
-                    <td >Product C</td>
+                    <td>Product C</td>
                     <td>20</td>
                     <td>Carboplatin</td>
                     <td>$25</td>
@@ -515,22 +574,21 @@ v<!DOCTYPE html>
                 </tbody>
               </table>
             </div>
-            </div>
-            <div class="total-quotation p-4 mt-0 text-end fw-bold">
-              <p>SubTotal : $1500.50</p>
-              <p>Tax 10% : $150</p>
-              <p>Ttoal Amount : $1350</p>
-            </div>
+          </div>
+          <div class="total-quotation p-4 mt-0 text-end fw-bold">
+            <p>SubTotal : $1500.50</p>
+            <p>Tax 10% : $150</p>
+            <p>Ttoal Amount : $1350</p>
           </div>
         </div>
-        <div class="btn-container text-center">
-          <a href="invoiceConfirmation.html">
-            <button class="accept-btn">Accept</button>
-          </a>
-          <a href="goodReceiptConfirmation.html">
-            <button class="reject-btn">Reject</button>
-          </a>
-        </div>
+      </div>
+      <div class="btn-container text-center">
+        <a href="invoiceConfirmation.html">
+          <button class="accept-btn">Accept</button>
+        </a>
+        <a href="goodReceiptConfirmation.html">
+          <button class="reject-btn">Reject</button>
+        </a>
       </div>
 
       <!-- End Invoice -->

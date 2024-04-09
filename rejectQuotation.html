@@ -20,7 +20,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="Index.css" />
-    
     <link rel="stylesheet" href="/assets/css/userManagement.css" />
 
     <link
@@ -358,17 +357,7 @@
           >
             <li>
               <a href="userManagement.html">
-                <i class="bi bi-circle"></i><span>Table 1</span>
-              </a>
-            </li>
-            <li>
-              <a href="userManagement.html">
-                <i class="bi bi-circle"></i><span>Table 2</span>
-              </a>
-            </li>
-            <li>
-              <a href="userManagement.html">
-                <i class="bi bi-circle"></i><span>Table 3</span>
+                <i class="bi bi-circle"></i><span>Admin User Management</span>
               </a>
             </li>
           </ul>
@@ -391,17 +380,13 @@
           >
             <li>
               <a href="masterData.html">
-                <i class="bi bi-circle"></i><span>Master Data 1</span>
+                <i class="bi bi-circle"></i><span>Plant Master Overview</span>
               </a>
             </li>
             <li>
-              <a href="masterData.html">
-                <i class="bi bi-circle"></i><span>Master Data 2</span>
-              </a>
-            </li>
-            <li>
-              <a href="masterData.html">
-                <i class="bi bi-circle"></i><span>Master Data 3</span>
+              <a href="materialMasterOverview.html">
+                <i class="bi bi-circle"></i
+                ><span>Material Master Overview</span>
               </a>
             </li>
           </ul>
@@ -409,13 +394,32 @@
 
         <li class="nav-item">
           <a
-            href="inventoryUpdate.html"
+            href="#"
             class="nav-link collapsed"
-            data-bs-target="#tables-nav"
+            data-bs-target="#Inv-nav"
+            data-bs-toggle="collapse"
           >
             <i class="bi bi-layout-text-window-reverse"></i>
             <span>Inventory Update</span>
+            <i class="bi bi-chevron-down ms-auto"></i>
           </a>
+          <ul
+            id="Inv-nav"
+            class="nav-content collapse"
+            data-bs-parent="#sidebar-nav"
+          >
+            <li>
+              <a href="inventoryUpdate.html">
+                <i class="bi bi-circle"></i
+                ><span>Iventory Update Overview</span>
+              </a>
+            </li>
+            <li>
+              <a href="consumptionEntry.html">
+                <i class="bi bi-circle"></i><span>Consumption Entry Form</span>
+              </a>
+            </li>
+          </ul>
         </li>
 
         <li class="nav-item">
@@ -431,11 +435,64 @@
         <li class="nav-item">
           <a
             class="nav-link collapsed"
-            data-bs-target="#icons-nav"
+            data-bs-target="#report-nav"
             href="openRequestReport.html"
+            data-bs-toggle="collapse"
           >
             <i class="bi bi-gear-wide"></i><span>Reports</span>
+            <i class="bi bi-chevron-down ms-auto"></i>
           </a>
+          <ul
+            id="report-nav"
+            class="nav-content collapse"
+            data-bs-parent="#sidebar-nav"
+          >
+            <li>
+              <a href="openRequestReport.html">
+                <i class="bi bi-circle"></i><span>Open Request Report</span>
+              </a>
+            </li>
+            <li>
+              <a href="openGoodsReceipts.html">
+                <i class="bi bi-circle"></i
+                ><span>Open Goods Receipts Report</span>
+              </a>
+            </li>
+            <li>
+              <a href="openInvoiceConfirmation.html">
+                <i class="bi bi-circle"></i
+                ><span>Open Invoice Confirmation Report</span>
+              </a>
+            </li>
+            <li>
+              <a href="consumptionReport.html">
+                <i class="bi bi-circle"></i><span>Last Consumption Report</span>
+              </a>
+            </li>
+            <li>
+              <a href="inventoryStatus.html">
+                <i class="bi bi-circle"></i><span>Inventory Status Report</span>
+              </a>
+            </li>
+            <li>
+              <a href="salesOrderDetailsReport.html">
+                <i class="bi bi-circle"></i
+                ><span>Sales Order Details Report</span>
+              </a>
+            </li>
+            <li>
+              <a href="completedRequestsReport.html">
+                <i class="bi bi-circle"></i
+                ><span>Completed Requests Report</span>
+              </a>
+            </li>
+            <li>
+              <a href="goodsReceiptDetailsReport.html">
+                <i class="bi bi-circle"></i
+                ><span>Goods Receipt Details Report</span>
+              </a>
+            </li>
+          </ul>
         </li>
 
         <li class="nav-item">
@@ -458,98 +515,37 @@
         <nav>
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-
-            <li class="breadcrumb-item">Mater Data</li>
-            <li class="breadcrumb-item active">Site Details</li>
+            <li class="breadcrumb-item">New Request</li>
+            <li class="breadcrumb-item">Quotation Approval</li>
+            <li class="breadcrumb-item">Quotation Details</li>
+            <li class="breadcrumb-item active">Quotation Reject</li>
           </ol>
         </nav>
       </div>
       <!-- End Page Title -->
 
       <div class="col-12">
-        <div class="card good-Receipt overflow-auto">
+        <div class="card good-Receipt overflow-auto ">
           <div class="card-body">
-            <h5 class="card-title">Site Details</h5>
-
-            <div class="card mb-4">
-              <div class="card-header">Site Information</div>
-              <div class="card-body">
-                <h5 class="card-title">Site Name</h5>
-                <p class="card-text">Address: 123 Main St, City, Country</p>
-                <p class="card-text">Contact: John Doe (johndoe@example.com)</p>
-              </div>
-            </div>
-
-            <!-- Inventory Items -->
-            <div class="card mb-4">
-              <div class="card-header">Inventory Items</div>
-              <div class="card-body">
-                <table class="table " >
-                  <thead >
-                    <tr >
-                      <th scope="col">Item ID</th>
-                      <th scope="col">Item Name</th>
-                      <th scope="col">Quantity</th>
-                      <th scope="col">Actions</th>
-                    </tr>
-                  </thead>
-                  <tbody >
-                    <tr >
-                      <th scope="row">1</th>
-                      <td>Item A</td>
-                      <td>10</td>
-                      <td>
-                        <div class="action-btn-container">
-                          <a href="#">
-                            <button class="btn btn-primary btn-sm">Edit</button>
-                          </a>
-                          <button class="btn btn-danger btn-sm">Delete</button>
-                        </div>
-                      </td>
-                    </tr>
-
-                    <tr>
-                      <th scope="row">2</th>
-                      <td>Item B</td>
-                      <td>432</td>
-                      <td>
-                        <div class="action-btn-container">
-                          <a href="#">
-                            <button class="btn btn-primary btn-sm">Edit</button>
-                          </a>
-                          <button class="btn btn-danger btn-sm">Delete</button>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td>Item C</td>
-                      <td>79</td>
-                      <td>
-                        <div class="action-btn-container">
-                          <a href="#">
-                            <button class="btn btn-primary btn-sm">Edit</button>
-                          </a>
-                          <button class="btn btn-danger btn-sm">Delete</button>
-                        </div>
-                      </td>
-                    </tr>
-                    <!-- Add more rows as needed -->
-                  </tbody>
-                </table>
-              </div>
-            </div>
+            <h5 class="card-title">Reject Quotation Confirmation</h5>
+            <p class="card-text text-center mt-5">
+              Are you sure you want to reject this quotation?
+            </p>
+            <form action="#" method="post" class="text-center mt-5 mb-5">
+              <!-- Hidden input field to store quotation ID or any other relevant data -->
+              <input type="hidden" name="quotation_id" value="123" />
+              <button type="submit" class="btn btn-danger">
+                <a href="quotationApproveSec.html" class="text-light"> Reject</a>
+               
+              </button>
+              <a href="quotationDetails.html" class="btn btn-secondary"
+                >Cancel</a
+              >
+            </form>
           </div>
         </div>
-        <div class="text-center">
-          <button class="btn btn-success">
-            <a href="productMasterOverview.html" class="text-light">
-              Goto Product Master
-            </a>
-          </button>
-        </div>
       </div>
-      <!--End Site Details -->
+      <!-- End reject Quotation -->
     </main>
     <!-- End #main -->
 
