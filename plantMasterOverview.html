@@ -428,7 +428,7 @@
             data-bs-parent="#sidebar-nav"
           >
             <li>
-              <a href="masterData.html">
+              <a href="plantMasterOverview.html">
                 <i class="bi bi-circle"></i><span>Plant Master Overview</span>
               </a>
             </li>
@@ -474,11 +474,56 @@
         <li class="nav-item">
           <a
             class="nav-link collapsed"
-            data-bs-target="#charts-nav"
+            data-bs-target="#newRequest-nav"
             href="newRequest.html"
+            data-bs-toggle="collapse"
           >
             <i class="bi bi-bell-fill"></i><span>New Request</span>
+            <i class="bi bi-chevron-down ms-auto"></i>
           </a>
+          <ul
+            id="newRequest-nav"
+            class="nav-content collapse"
+            data-bs-parent="#sidebar-nav"
+          >
+            <li>
+              <a href="newRequest.html">
+                <i class="bi bi-circle"></i><span>New Request Form</span>
+              </a>
+            </li>
+            <li>
+              <a href="quotationApproveSec.html">
+                <i class="bi bi-circle"></i
+                ><span>Quotation Approval Overview</span>
+              </a>
+            </li>
+            <li>
+              <a href="quotationDetails.html">
+                <i class="bi bi-circle"></i><span>Quotation Details</span>
+              </a>
+            </li>
+            <li>
+              <a href="goodsReceiptOverview.html">
+                <i class="bi bi-circle"></i><span>Goods Receipt Overview</span>
+              </a>
+            </li>
+            <li>
+              <a href="goodReceiptConfirmation.html">
+                <i class="bi bi-circle"></i
+                ><span>Goods Receipt Confirmation</span>
+              </a>
+            </li>
+            <li>
+              <a href="invoice.html">
+                <i class="bi bi-circle"></i><span>Invoice Overview</span>
+              </a>
+            </li>
+            <li>
+              <a href="invoiceConfirmation.html">
+                <i class="bi bi-circle"></i><span>Invoice Confirmation</span>
+              </a>
+            </li>
+          </ul>
         </li>
 
         <li class="nav-item">
@@ -576,7 +621,7 @@
           <div class="card-body">
             <h5 class="card-title">Plant Master Overview</h5>
 
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <!-- <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
               <div class="col">
                 <div class="card site-card">
                   <div class="card-body">
@@ -698,11 +743,139 @@
                   </div>
                 </div>
               </div>
-              <!-- Add more site cards here -->
+            
+            </div> -->
+         
+
+            <div class="table-responsive">
+              <table class="table table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">Customer Name</th>
+                    <th scope="col">Customer Description</th>
+                    <th scope="col">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Customer 1</td>
+                    <td>Customer Description 1</td>
+                    <td>
+                      <button class="btn btn-primary btn-view-details">
+                        <a href="plantDetails.html" class="text-light"
+                          >View Details</a
+                        >
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Customer 2</td>
+                    <td>Customer Description 2</td>
+                    <td>
+                      <button class="btn btn-primary btn-view-details">
+                        <a href="plantDetails.html" class="text-light"
+                          >View Details</a
+                        >
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Customer 3</td>
+                    <td>Customer Description 3</td>
+                    <td>
+                      <button class="btn btn-primary btn-view-details">
+                        <a href="plantDetails.html" class="text-light"
+                          >View Details</a
+                        >
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Customer 4</td>
+                    <td>Customer Description 4</td>
+                    <td>
+                      <button class="btn btn-primary btn-view-details">
+                        <a href="plantDetails.html" class="text-light"
+                          >View Details</a
+                        >
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Customer 5</td>
+                    <td>Customer Description 5</td>
+                    <td>
+                      <button class="btn btn-primary btn-view-details">
+                        <a href="plantDetails.html" class="text-light"
+                          >View Details</a
+                        >
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Customer 6</td>
+                    <td>Customer Description 6</td>
+                    <td>
+                      <button class="btn btn-primary btn-view-details">
+                        <a href="plantDetails.html" class="text-light"
+                          >View Details</a
+                        >
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Customer 7</td>
+                    <td>Customer Description 7</td>
+                    <td>
+                      <button class="btn btn-primary btn-view-details">
+                        <a href="plantDetails.html" class="text-light"
+                          >View Details</a
+                        >
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Customer 8</td>
+                    <td>Customer Description 8</td>
+                    <td>
+                      <button class="btn btn-primary btn-view-details">
+                        <a href="plantDetails.html" class="text-light"
+                          >View Details</a
+                        >
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Customer 9</td>
+                    <td>Customer Description 9</td>
+                    <td>
+                      <button class="btn btn-primary btn-view-details">
+                        <a href="plantDetails.html" class="text-light"
+                          >View Details</a
+                        >
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Customer 10</td>
+                    <td>Customer Description 10</td>
+                    <td>
+                      <button class="btn btn-primary btn-view-details">
+                        <a href="plantDetails.html" class="text-light"
+                          >View Details</a
+                        >
+                      </button>
+                    </td>
+                  </tr>
+                
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
       </div>
+
+ 
       <!-- End Master Data -->
     </main>
     <!-- End #main -->
