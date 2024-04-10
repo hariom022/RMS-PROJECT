@@ -380,7 +380,7 @@ v<!DOCTYPE html>
             data-bs-parent="#sidebar-nav"
           >
             <li>
-              <a href="masterData.html">
+              <a href="plantMasterOverview.html">
                 <i class="bi bi-circle"></i><span>Plant Master Overview</span>
               </a>
             </li>
@@ -426,11 +426,56 @@ v<!DOCTYPE html>
         <li class="nav-item">
           <a
             class="nav-link collapsed"
-            data-bs-target="#charts-nav"
+            data-bs-target="#newRequest-nav"
             href="newRequest.html"
+            data-bs-toggle="collapse"
           >
             <i class="bi bi-bell-fill"></i><span>New Request</span>
+            <i class="bi bi-chevron-down ms-auto"></i>
           </a>
+          <ul
+            id="newRequest-nav"
+            class="nav-content collapse"
+            data-bs-parent="#sidebar-nav"
+          >
+            <li>
+              <a href="newRequest.html">
+                <i class="bi bi-circle"></i><span>New Request Form</span>
+              </a>
+            </li>
+            <li>
+              <a href="quotationApproveSec.html">
+                <i class="bi bi-circle"></i
+                ><span>Quotation Approval Overview</span>
+              </a>
+            </li>
+            <li>
+              <a href="quotationDetails.html">
+                <i class="bi bi-circle"></i><span>Quotation Details</span>
+              </a>
+            </li>
+            <li>
+              <a href="goodsReceiptOverview.html">
+                <i class="bi bi-circle"></i><span>Goods Receipt Overview</span>
+              </a>
+            </li>
+            <li>
+              <a href="goodReceiptConfirmation.html">
+                <i class="bi bi-circle"></i
+                ><span>Goods Receipt Confirmation</span>
+              </a>
+            </li>
+            <li>
+              <a href="invoice.html">
+                <i class="bi bi-circle"></i><span>Invoice Overview</span>
+              </a>
+            </li>
+            <li>
+              <a href="invoiceConfirmation.html">
+                <i class="bi bi-circle"></i><span>Invoice Confirmation</span>
+              </a>
+            </li>
+          </ul>
         </li>
 
         <li class="nav-item">
@@ -527,7 +572,7 @@ v<!DOCTYPE html>
       </div> -->
       <!-- End Page Title -->
 
-      <div class="col-12 mt-5">
+      <div class="col-12">
         <div class="card good-Receipt overflow-auto">
           <div class="card-body">
             <h5 class="card-title">Good Receipt Overview</h5>
@@ -537,8 +582,10 @@ v<!DOCTYPE html>
                 <thead>
                   <tr class="text-center">
                     <th scope="col ">Request No</th>
+                    <th scope="col ">Quotation No</th>
+                    <th scope="col ">Sales No</th>
+                    <th scope="col ">OBD No</th>
                     <th scope="col ">Good Receipt</th>
-                    <th scope="col ">Invoice</th>
                     <th scope="col ">Action</th>
                   </tr>
                 </thead>
@@ -546,74 +593,16 @@ v<!DOCTYPE html>
                 <tbody>
                   <tr class="text-center">
                     <th scope="row" class="fw-normal">#748</th>
+                    <td>QTN-001</td>
+                    <td>SN-123456</td>
+                    <td>OBD-789012</td>
                     <td>#012</td>
-                    <td>INV-2023001</td>
                     <td>
                       <div class="btn-container">
-                        <a href="goodReceiptConfirmation.html">
+                        <a href="#">
                           <button class="accept-btn">Accept</button>
                         </a>
-                        <a href="quotationDetails.html">
-                          <button class="reject-btn">Reject</button>
-                        </a>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr class="text-center">
-                    <th scope="row" class="fw-normal">#755</th>
-                    <td>#013</td>
-                    <td>INV-2023441</td>
-                    <td>
-                      <div class="btn-container">
-                        <a href="goodReceiptConfirmation.html">
-                          <button class="accept-btn">Accept</button>
-                        </a>
-                        <a href="quotationDetails.html">
-                          <button class="reject-btn">Reject</button>
-                        </a>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr class="text-center">
-                    <th scope="row" class="fw-normal">#875</th>
-                    <td>#014</td>
-                    <td>INV-2023221</td>
-                    <td>
-                      <div class="btn-container">
-                        <a href="goodReceiptConfirmation.html">
-                          <button class="accept-btn">Accept</button>
-                        </a>
-                        <a href="quotationDetails.html">
-                          <button class="reject-btn">Reject</button>
-                        </a>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr class="text-center">
-                    <th scope="row" class="fw-normal">#754</th>
-                    <td>#015</td>
-                    <td>INV-2023433</td>
-                    <td>
-                      <div class="btn-container">
-                        <a href="goodReceiptConfirmation.html">
-                          <button class="accept-btn">Accept</button>
-                        </a>
-                        <a href="quotationDetails.html">
-                          <button class="reject-btn">Reject</button>
-                        </a>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr class="text-center">
-                    <th scope="row" class="fw-normal">#743</th>
-                    <td>#016</td>
-                    <td>INV-2023011</td>
-                    <td>
-                      <div class="btn-container">
-                        <a href="goodReceiptConfirmation.html">
-                          <button class="accept-btn">Accept</button>
-                        </a>
-                        <a href="quotationDetails.html">
+                        <a href="#">
                           <button class="reject-btn">Reject</button>
                         </a>
                       </div>
@@ -621,8 +610,61 @@ v<!DOCTYPE html>
                   </tr>
                   <tr class="text-center">
                     <th scope="row" class="fw-normal">#749</th>
-                    <td>#017</td>
-                    <td>INV-2023017</td>
+                    <td>QTN-002</td>
+                    <td>SN-123543</td>
+                    <td>OBD-789014</td>
+                    <td>#013</td>
+                    <td>
+                      <div class="btn-container">
+                        <a href="#">
+                          <button class="accept-btn">Accept</button>
+                        </a>
+                        <a href="#">
+                          <button class="reject-btn">Reject</button>
+                        </a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <th scope="row" class="fw-normal">#750</th>
+                    <td>QTN-003</td>
+                    <td>SN-123444</td>
+                    <td>OBD-789014</td>
+                    <td>#014</td>
+                    <td>
+                      <div class="btn-container">
+                        <a href="#">
+                          <button class="accept-btn">Accept</button>
+                        </a>
+                        <a href="#">
+                          <button class="reject-btn">Reject</button>
+                        </a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <th scope="row" class="fw-normal">#751</th>
+                    <td>QTN-004</td>
+                    <td>SN-1223456</td>
+                    <td>OBD-789021</td>
+                    <td>#015</td>
+                    <td>
+                      <div class="btn-container">
+                        <a href="#">
+                          <button class="accept-btn">Accept</button>
+                        </a>
+                        <a href="#">
+                          <button class="reject-btn">Reject</button>
+                        </a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <th scope="row" class="fw-normal">#333</th>
+                    <td>QTN-007</td>
+                    <td>SN-124322</td>
+                    <td>OBD-789018</td>
+                    <td>#016</td>
                     <td>
                       <div class="btn-container">
                         <a href="goodReceiptConfirmation.html">
@@ -634,6 +676,76 @@ v<!DOCTYPE html>
                       </div>
                     </td>
                   </tr>
+                  <tr class="text-center">
+                    <th scope="row" class="fw-normal">#778</th>
+                    <td>QTN-008</td>
+                    <td>SN-123654</td>
+                    <td>OBD-329012</td>
+                    <td>#017</td>
+                    <td>
+                      <div class="btn-container">
+                        <a href="#">
+                          <button class="accept-btn">Accept</button>
+                        </a>
+                        <a href="#">
+                          <button class="reject-btn">Reject</button>
+                        </a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <th scope="row" class="fw-normal">#448</th>
+                    <td>QTN-009</td>
+                    <td>SN-223456</td>
+                    <td>OBD-789043</td>
+                    <td>#018</td>
+                    <td>
+                      <div class="btn-container">
+                        <a href="#">
+                          <button class="accept-btn">Accept</button>
+                        </a>
+                        <a href="#">
+                          <button class="reject-btn">Reject</button>
+                        </a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <th scope="row" class="fw-normal">#777</th>
+                    <td>QTN-010</td>
+                    <td>SN-125456</td>
+                    <td>OBD-785433</td>
+                    <td>#019</td>
+                    <td>
+                      <div class="btn-container">
+                        <a href="#">
+                          <button class="accept-btn">Accept</button>
+                        </a>
+                        <a href="#">
+                          <button class="reject-btn">Reject</button>
+                        </a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <th scope="row" class="fw-normal">#658</th>
+                    <td>QTN-011</td>
+                    <td>SN-123555</td>
+                    <td>OBD-784332</td>
+                    <td>#020</td>
+                    <td>
+                      <div class="btn-container">
+                        <a href="goodReceiptConfirmation.html">
+                          <button class="accept-btn">Accept</button>
+                        </a>
+                        <a href="quotationDetails.html">
+                          <button class="reject-btn">Reject</button>
+                        </a>
+                      </div>
+                    </td>
+                  </tr>
+                 
+               
                 </tbody>
               </table>
             </div>
