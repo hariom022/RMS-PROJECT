@@ -571,270 +571,116 @@
           <div class="card-body">
             <h5 class="card-title">Consumption Entry Form</h5>
 
-            <div class="table-responsive">
-              <table class="table table-striped table-bordered table-hover">
-                <thead>
-                  <tr class="text-center">
-                    <th scope="col">Plant</th>
-                    <th scope="col">Material</th>
-                    <th scope="col">Material Description</th>
-                    <th scope="col">UOM</th>
-                    <th scope="col">Product Type</th>
-                    <th scope="col">Quantity Consumed</th>
-                    <th scope="col">Date of Consumption</th>
-                    <th scope="col">Material Document</th>
-                    <th scope="col">Unrestricted Stock</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="text-center">
-                    <td>Plant 1</td>
-                    <td>Material 1</td>
-                    <td>Material Description 1</td>
-                    <td>EA</td>
-                    <td>Product Type 1</td>
-                    <td>10</td>
-                    <td>2024-04-10</td>
-                    <td>123456</td>
-                    <td>50</td>
-                  </tr>
-                  <tr class="text-center">
-                    <td>Plant 2</td>
-                    <td>Material 2</td>
-                    <td>Material Description 2</td>
-                    <td>KG</td>
-                    <td>Product Type 2</td>
-                    <td>20</td>
-                    <td>2024-04-09</td>
-                    <td>789012</td>
-                    <td>30</td>
-                  </tr>
-
-                  <tr class="text-center">
-                    <td>Plant 3</td>
-                    <td>Material 3</td>
-                    <td>Material Description 3</td>
-                    <td>EA</td>
-                    <td>Product Type 3</td>
-                    <td>40</td>
-                    <td>2024-03-20</td>
-                    <td>789013</td>
-                    <td>20</td>
-                  </tr>
-                  <tr class="text-center">
-                    <td>Plant 4</td>
-                    <td>Material 4</td>
-                    <td>Material Description 4</td>
-                    <td>EA</td>
-                    <td>Product Type 4</td>
-                    <td>50</td>
-                    <td>2024-04-12</td>
-                    <td>889012</td>
-                    <td>40</td>
-                  </tr>
-                  <tr class="text-center">
-                    <td>Plant 5</td>
-                    <td>Material 5</td>
-                    <td>Material Description 5</td>
-                    <td>EA</td>
-                    <td>Product Type 5</td>
-                    <td>20</td>
-                    <td>2024-05-03</td>
-                    <td>777012</td>
-                    <td>50</td>
-                  </tr>
-                  <tr class="text-center">
-                    <td>Plant 6</td>
-                    <td>Material 6</td>
-                    <td>Material Description 6</td>
-                    <td>EA</td>
-                    <td>Product Type 6</td>
-                    <td>70</td>
-                    <td>2024-06-08</td>
-                    <td>799012</td>
-                    <td>20</td>
-                  </tr>
-                  <tr class="text-center">
-                    <td>Plant 7</td>
-                    <td>Material 7</td>
-                    <td>Material Description 7</td>
-                    <td>KG</td>
-                    <td>Product Type 7</td>
-                    <td>20</td>
-                    <td>2024-04-09</td>
-                    <td>789012</td>
-                    <td>30</td>
-                  </tr>
-                  <tr class="text-center">
-                    <td>Plant 8</td>
-                    <td>Material 8</td>
-                    <td>Material Description 8</td>
-                    <td>EA</td>
-                    <td>Product Type 8</td>
-                    <td>50</td>
-                    <td>2024-04-10</td>
-                    <td>789015</td>
-                    <td>60</td>
-                  </tr>
-
-                  <tr class="text-center">
-                    <td>Plant 9</td>
-                    <td>Material 9</td>
-                    <td>Material Description 9</td>
-                    <td>EA</td>
-                    <td>Product Type 9</td>
-                    <td>90</td>
-                    <td>2024-04-11</td>
-                    <td>789017</td>
-                    <td>40</td>
-                  </tr>
-                  <tr class="text-center">
-                    <td>Plant 10</td>
-                    <td>Material 10</td>
-                    <td>Material Description 10</td>
-                    <td>EA</td>
-                    <td>Product Type 10</td>
-                    <td>70</td>
-                    <td>2024-04-12</td>
-                    <td>789019</td>
-                    <td>60</td>
-                  </tr>
-                  <tr class="text-center">
-                    <td>Plant 11</td>
-                    <td>Material 11</td>
-                    <td>Material Description 11</td>
-                    <td>EA</td>
-                    <td>Product Type 11</td>
-                    <td>80</td>
-                    <td>2024-04-13</td>
-                    <td>789020</td>
-                    <td>50</td>
-                  </tr>
-                  <!-- Add more rows as needed -->
-                </tbody>
-              </table>
-            </div>
-
             <!-- ---------------------------------------- -->
-            <div class="mt-5">
-              <form>
-                <div class="row mb-3">
-                  <div class="col-md-6">
-                    <label for="plant" class="form-label">Plant</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="plant"
-                      name="plant"
-                      required
-                    />
-                  </div>
-                  <div class="col-md-6">
-                    <label for="material" class="form-label">Material</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="material"
-                      name="material"
-                      required
-                    />
-                  </div>
+            <form>
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <label for="plant" class="form-label">Plant</label>
+                  <select class="form-select" id="plant" required>
+                    <option selected disabled>Select Plant</option>
+                    <option value="plant1">Plant 1</option>
+                    <option value="plant2">Plant 2</option>
+                    <option value="plant3">Plant 3</option>
+                  </select>
                 </div>
-                <div class="row mb-3">
-                  <div class="col-md-6">
-                    <label for="description" class="form-label"
-                      >Material Description</label
-                    >
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="description"
-                      name="description"
-                      required
-                    />
-                  </div>
-                  <div class="col-md-6">
-                    <label for="uom" class="form-label"
-                      >UOM (Unit of Measure)</label
-                    >
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="uom"
-                      name="uom"
-                      required
-                    />
-                  </div>
+                <div class="col-md-6">
+                  <label for="material" class="form-label">Material</label>
+                  <select class="form-select" id="material" required>
+                    <option selected disabled>Select Material</option>
+                    <option value="material1">Material 1</option>
+                    <option value="material2">Material 2</option>
+                    <option value="material3">Material 3</option>
+                  </select>
                 </div>
-                <div class="row mb-3">
-                  <div class="col-md-6">
-                    <label for="productType" class="form-label"
-                      >Product Type</label
-                    >
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="productType"
-                      name="productType"
-                      required
-                    />
-                  </div>
-                  <div class="col-md-6">
-                    <label for="qtyConsumed" class="form-label"
-                      >Quantity Consumed</label
-                    >
-                    <input
-                      type="number"
-                      class="form-control"
-                      id="qtyConsumed"
-                      name="qtyConsumed"
-                      required
-                    />
-                  </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <label for="materialDescription" class="form-label">Material Description</label>
+                  <select class="form-select" id="materialDescription" required>
+                    <option selected disabled>Select Material Description</option>
+                    <option value="materialDescription1">Material Description 1</option>
+                    <option value="materialDescription2">Material Description 2</option>
+                    <option value="materialDescription3">Material Description 3</option>
+                  </select>
                 </div>
-                <div class="row mb-3">
-                  <div class="col-md-6">
-                    <label for="dateConsumed" class="form-label"
-                      >Date of Quantity Consumed</label
-                    >
-                    <input
-                      type="date"
-                      class="form-control"
-                      id="dateConsumed"
-                      name="dateConsumed"
-                      required
-                    />
-                  </div>
-                  <div class="col-md-6">
-                    <label for="materialDocument" class="form-label"
-                      >Material Document</label
-                    >
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="materialDocument"
-                      name="materialDocument"
-                      required
-                    />
-                  </div>
+                <div class="col-md-6">
+                  <label for="uom" class="form-label">UOM</label>
+                  <select class="form-select" id="uom" required>
+                    <option selected disabled>Select UOM</option>
+                    <option value="pieces">Pieces</option>
+                    <option value="units">Units</option>
+                    <option value="kilograms">Kilograms</option>
+                    <option value="liters">Liters</option>
+                  </select>
                 </div>
-                <div class="row mb-3">
-                  <div class="col-md-6">
-                    <label for="unrestrictedStock" class="form-label"
-                      >Unrestricted Stock in Medicine Inventory</label
-                    >
-                    <input
-                      type="number"
-                      class="form-control"
-                      id="unrestrictedStock"
-                      name="unrestrictedStock"
-                      required
-                    />
-                  </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <label for="productType" class="form-label"
+                    >Product Type</label
+                  >
+                  <select class="form-select" id="productType">
+                    <option selected disabled>Select Product Type</option>
+                    <option value="pieces">Product Type 1</option>
+                    <option value="units">Product Type 2</option>
+                    <option value="kilograms">Product Type 3</option>
+                    <option value="liters">Product Type 4</option>
+                  </select>
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </form>
-            </div>
+                <div class="col-md-6">
+                  <label for="materialDocument" class="form-label"
+                    >Material Document</label
+                  >
+                  <select class="form-select" id="materialDocument">
+                    <option selected disabled>Select Material Document</option>
+                    <option value="pieces">Material Document 1</option>
+                    <option value="units">Material Document 2</option>
+                    <option value="kilograms">Material Document 3</option>
+                    <option value="liters">Material Document 4</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <label for="dateOfQuantityConsumed" class="form-label"
+                    >Date of Quantity Consumed</label
+                  >
+                  <input
+                    type="date"
+                    class="form-control"
+                    id="dateOfQuantityConsumed"
+                    required
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="quantityConsumed" class="form-label"
+                    >Quantity Consumed</label
+                  >
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="quantityConsumed"
+                    placeholder="Enter Quantity Consumed"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <label for="unrestrictedStock" class="form-label"
+                    >Unrestricted Stock</label
+                  >
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="unrestrictedStock"
+                    placeholder="Enter Unrestricted Stock"
+                    required
+                  />
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
           </div>
         </div>
       </div>
